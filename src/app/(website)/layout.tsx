@@ -1,5 +1,5 @@
 import { SiteHeader } from '@/components/layout/SiteHeader';
-import { SiteFooter } from '@/components/layout/SiteFooter';
+import { Footer } from '@/components/marketing/Footer';
 
 export default function WebsiteLayout({ children }: { children: React.ReactNode }) {
     return (
@@ -8,7 +8,7 @@ export default function WebsiteLayout({ children }: { children: React.ReactNode 
             <main className="flex-1">
                 {children}
             </main>
-            <SiteFooter />
+            <Footer />
         </div>
     );
 }

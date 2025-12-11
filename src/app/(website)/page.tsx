@@ -7,7 +7,7 @@ import { WhyUs } from "@/components/marketing/WhyUs";
 import { Testimonials } from "@/components/marketing/Testimonials";
 import { PricingPreview } from "@/components/marketing/PricingPreview";
 import { FAQ } from "@/components/marketing/FAQ";
-import { Footer } from "@/components/marketing/Footer";
+
 
 export default function LandingPage() {
     return (
@@ -21,7 +21,6 @@ export default function LandingPage() {
             <Testimonials />
             <PricingPreview />
             <FAQ />
-            <Footer />
         </main>
     );
 }
