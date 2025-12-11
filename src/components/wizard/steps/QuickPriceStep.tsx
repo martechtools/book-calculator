@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 export function QuickPriceStep() {
     const store = useBookStore();
     const { quantity } = store;
-    const { pricePerBook, totalPrice, savings } = calculatePricing(store);
+    const { pricePerBook, total } = calculatePricing(store);
     const productionDays = calculateProductionDays(store);
 
     const Preview = (
@@ -51,13 +51,8 @@ export function QuickPriceStep() {
                 >
                     <p className="text-gray-400 text-sm uppercase tracking-widest font-medium mb-2">Estimated Total</p>
                     <div className="text-5xl font-light text-white mb-2">
-                        {formatCurrency(totalPrice)}
+                        {formatCurrency(total)}
                     </div>
-                    {savings > 0 && (
-                        <p className="text-sm text-green-400">
-                            Savings applied!
-                        </p>
-                    )}
                 </motion.div>
             </div>
 

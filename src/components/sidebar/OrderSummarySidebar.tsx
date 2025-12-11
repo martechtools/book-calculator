@@ -130,18 +130,12 @@ export function OrderSummarySidebar() {
                         <span className="text-sm text-gray-400">Unit Price</span>
                         <span className="font-medium">{formatCurrency(pricing.pricePerBook)}</span>
                     </div>
-                    {pricing.savings > 0 && (
-                        <div className="flex justify-between items-end text-green-400 text-xs">
-                            <span>Volume Savings</span>
-                            <span>-{formatCurrency(pricing.savings)}</span>
-                        </div>
-                    )}
                 </div>
 
                 <div className="pt-4 border-t border-gray-800">
                     <div className="flex justify-between items-end">
                         <span className="text-lg font-light">Total</span>
-                        <span className="text-2xl font-bold tracking-tight">{formatCurrency(pricing.totalPrice)}</span>
+                        <span className="text-2xl font-bold tracking-tight">{formatCurrency(pricing.total)}</span>
                     </div>
                     <div className="mt-2 text-right">
                         <span className="text-xs text-gray-500">Shipping calculated at checkout</span>
